@@ -1,0 +1,24 @@
+.cube{
+    position: relative;
+    left: 40%;
+}
+.side{
+    height: 95px;
+    position: absolute;
+    text-align: center;
+    width: 95px;
+    background-color: antiquewhite;
+}
+ .top{
+    background: #00704A;
+    transform: rotate(-45deg) skew(15deg,15deg);
+    
+}
+ .left{
+    background: gold;
+    transform: rotate(15deg) skew(15deg ,15deg) translate(-50%,100%);
+}  
+.right{
+    background: aquamarine;
+    transform: rotate(-15deg) skew(-15deg,-15deg) translate(50%,100%);
+}
