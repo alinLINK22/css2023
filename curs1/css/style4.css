@@ -1,0 +1,22 @@
+body{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+div{
+    border: 5px blueviolet solid;
+    padding: 20px;
+    margin: 15px;
+    background-color: aqua;
+    color: cornflowerblue;
+    text-align: center;
+}
+div > div{
+    background-color: brown;
+    color: azure;
+}
+div > div > div{
+    background-color: yellowgreen;
+    color: coral;
+}
