@@ -1,0 +1,89 @@
+body{
+    background-image:  url("../img/venus2.png"),url("../img/mars2.png"),url("../img/sun2.png"),url("../img/mercury2.png"),url("../img/earth2.png"),url("../img/skystars.jpg");
+    background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,repeat;
+    background-size:  25%,20%,60%,10%,50%,auto;
+    background-position: 30% 50%,5% 100%,center center,70% 45%,20% 10%,0% 0%;
+    height: 100vh;
+    animation-name: solar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode:both;
+   
+} 
+
+@keyframes solar{
+    from{
+background-position: 30% 50%,5% 100%,center center,45% 45%,20% 10%,0% 0%;
+    }
+    to{
+        
+        background-position:  80% 50%,100% 100%,center center,70% 45%,140% 10%,0% 0%;
+    }
+}
+
+
+/* 
+.sun {
+    position: absolute;
+    top: 2%;
+    left: 30%;
+    
+}
+.sun>img{
+    width: 500px;
+    height: 700px;
+}
+
+
+
+.mercury {
+    position: absolute;
+    top: 35%;
+    right: 55%;
+    
+     
+     
+    
+  
+   
+}
+.mercury>img{
+    width: 140px;
+    height: 190px;
+}
+
+
+.venus {
+    position: absolute;
+    top: 20%;
+    right: 60%;
+    
+    
+}
+.venus >img{
+    width: 200px;
+    height: 260px;
+}
+
+.earth {
+    position: absolute;
+    top: -6%;
+    right: 50%;
+    
+}
+.earth> img{
+    width: 400px;
+    height: 520px;
+}
+
+.mars {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    
+}
+.mars>img{
+    width: 180px;
+    height: 240px;
+} */

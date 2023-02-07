@@ -1,0 +1,72 @@
+#elemntToAnimate{
+    position: relative;
+    animation: yourAnimation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+
+}
+@keyframes yourAnimation {
+    0%{
+        transform: translate(0,0) rotate(0deg) scale(2);
+        color: aqua;
+    }
+    20%{
+        transform: translate(50px,0) rotate(90deg) scale(2);
+        color:red;
+    }
+    25%{
+        transform: translate(50px,50px) rotate(-180deg) scale(2);
+        color: rebeccapurple;
+        
+    }
+    40%{
+        transform: translate(150px,50px) rotate(200deg) scale(2);
+        color: royalblue;
+    }
+    45%{
+        transform: translate(150px,0) rotate(1000deg) scale(2);
+        color: pink;
+    }
+    60%{
+        transform: translate(350px,0) rotate(-190deg) scale(2);
+        color: brown;
+    }
+    65%{
+        transform: translate(350px,50px) rotate(10000deg) scale(2);
+        color: yellowgreen;
+    }
+    80%{
+        transform: translate(550px,50px) rotate(60deg) scale(2);
+        color: burlywood;
+    }
+    95%{
+        transform: translate(650px,0) rotate(-10deg) scale(2);
+        color: violet;
+    }
+    100%{
+        transform: translate(900px,0) rotate(145deg) scale(2);
+        color: magenta  ;
+    }
+    
+    
+}
+
+#demogame{
+    background-image:url(../css/skystars.jpg) ;
+    width: 100%;
+    max-width: 1600px;
+    height: 100vh;
+    margin: auto;
+    background-size: cover;
+}
+#targetElement{
+    color: red;
+    border: 50%;
+    height: 100px;
+    width: 100px;
+    font-size: 65px;
+    transform-origin: center center;
+}
