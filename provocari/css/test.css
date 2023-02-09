@@ -1,0 +1,6 @@
+div{
+    border: 5px red solid;
+ width: 100%;
+ max-width: 103px; 
+ border-radius: 50%;
+}
