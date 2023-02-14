@@ -1,0 +1,122 @@
+/* #myBox {
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    transform: rotate3d(1, 1, 1, 45deg);
+    margin: 50px auto;
+} */
+
+/* #myBox:hover,
+#myBox:focus {
+    transform: rotate3d(1, 1, 1, 30deg) matrix3d(1, 0, 0, 0, 0, 1, 6, 0, 0, 0, 1, 0, 50, 100, 0, 1.1);
+} */
+/* 
+.face {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: inherit;
+    font-size: 60px;
+    color: #fff;
+}
+
+.front {
+    background: rgba(90, 90, 90, .7);
+    transform: translateZ(50px);
+}
+
+.back {
+    background: rgba(0, 210, 0, .7);
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+.right {
+    background: rgba(210, 0, 0, .7);
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.left {
+    background: rgba(0, 0, 210, .7);
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.top {
+    background: rgba(210, 210, 0, .7);
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.bottom {
+    background: rgba(210, 0, 210, .7);
+    transform: rotateX(-90deg) translateZ(50px);
+} */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+ }
+ 
+ html, body {
+    width: 100%;
+    height: 100%;
+ }
+ 
+ .cube {
+   -webkit-transform-style: preserve-3d;
+   -webkit-animation: spin 3s infinite ease-out;
+   position: relative;
+   width: 100px;
+   height: 100px;
+   top: 50%;
+   left: 50%;
+   margin-left: -50px;
+   margin-top: -50px;
+ }
+ 
+ .cube div {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    box-shadow: inset 0px 0px 0px 1px rgba(10, 0, 0, 0.8);
+    background: rgba(87, 6, 97, 0.6);
+    display: block;
+    position: absolute;
+ }
+ 
+ .cube div.top {
+    -webkit-transform: rotateX(90deg); 
+   margin-top: -50px;
+ }
+ 
+ .cube div.right {
+    -webkit-transform: rotateY(90deg); 
+   margin-left: 50px;
+ }
+ 
+ .cube div.bottom {
+    -webkit-transform: rotateX(-90deg); 
+   margin-top: 50px;
+ }
+ 
+ .cube div.left {
+    -webkit-transform: rotateY(-90deg); 
+   margin-left: -50px;
+ }
+ 
+ .cube div.front {
+    -webkit-transform: translateZ(50px);
+ }
+ 
+ .cube div.back {
+    -webkit-transform: translateZ(-50px) rotateX(180deg);
+ }
+ 
+ @-webkit-keyframes spin {
+   0% {-webkit-transform: rotateX(-20deg) rotateY(20deg);}
+   100% {-webkit-transform: rotateX(-20deg) rotateY(740deg);}
+ }
